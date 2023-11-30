@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/Frontend/Hopstarter-Face-Avatars-Male-Face-A1.ico">
+    <link rel="stylesheet" href="/Frontend/css/ugyfelAdattorles.css">
+    <title>Ugyfel torlese</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Ügyfél adatainak törlése</h1>
+        <div class="row">
+            <form action="/ugyfelTorles" method="post">
+                <label for="azonositoID">Tartomány: 1001 - 1013</label>
+                <br>
+                <input type="number" id="azonositoID" name="azonositoID" value="1001">
+                <br>
+                <br>
+                <button type="submit" class="btn btn-danger text-dark" name="torlendoMezo" value="nev">Név törlés</button>
+                <button type="submit" class="btn btn-danger text-dark" name="torlendoMezo" value="szulev">Születési év törlés</button>
+                <button type="submit" class="btn btn-danger text-dark" name="torlendoMezo" value="irszam">Irányítószám törlés</button>
+                <button type="submit" class="btn btn-danger text-dark" name="torlendoMezo" value="orsz">Országkód törlés</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
